@@ -1,5 +1,6 @@
 # pouch-cell-thermal
-Accurate thermal modelling during fast charging in large-format Li-ion pouch cells
+Accurate thermal modelling during fast charging in large-format Li-ion pouch cells.
+See our paper ["Electrochemical–thermal modelling of high power Li-ion pouch cells" (Journal of Power Sources, 2026)](https://doi.org/10.1016/j.jpowsour.2025.238764).
 
 
 # Data: 

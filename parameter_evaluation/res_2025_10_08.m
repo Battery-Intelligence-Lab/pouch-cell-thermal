@@ -47,7 +47,7 @@ for i_CC = 4%1:size(x0_CCs,1)
 
             model.param.set('U0', sprintf('%4.4f [V]',data.ExpV_0));
 
-            model_initialise(x_now, model, data); % run_sim
+            initialise_model(x_now, model, data); % run_sim
             mname = fitting_mode + "_" + SOC + "_" + Cr + "C_" + i_CC + "_revision.mph";
 
     %        mphsave(model, mname);

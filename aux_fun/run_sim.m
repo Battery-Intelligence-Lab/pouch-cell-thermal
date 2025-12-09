@@ -3,7 +3,7 @@ function [Simt, SimV, SimT, Qgen, SOCmat] = run_sim(x, model, data)
 % if the simulation successfully runs then it extracts time, voltage, temperature, heat generation and SOC values. 
 % Author: Volkan Kumtepeli
 
-model_initialise(x, model, data);
+initialise_model(x, model, data);
 
 try
 

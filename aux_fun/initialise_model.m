@@ -1,4 +1,4 @@
-function [] = model_initialise(x, model, data)
+function [] = initialise_model(x, model, data)
 % This function initialises model from data
 % Author: Volkan Kumtepeli
 param.names = {'Cpel', 'keff', 'h1', 'ku', 'keref', 'alfa_ke', 'i0ref', 'Ei0', 'delS'};

@@ -2,6 +2,31 @@
 Accurate thermal modelling during fast charging in large-format Li-ion pouch cells.
 See our paper ["Electrochemical–thermal modelling of high power Li-ion pouch cells" (Journal of Power Sources, 2026)](https://doi.org/10.1016/j.jpowsour.2025.238764).
 
+**Authors:** Volkan Kumtepeli, Malgorzata E. Wojtala, Eloise C. Tredenick, Charles W. Monroe, David A. Howey.
+
+# How to use 
+
+This repository is comprised of several folders: 
+- `aux_fun`: Auxillary functions to be used for running simulations, optimisation and plotting. 
+- `data`: Experimental data and some parameter values and/or functions. 
+- `parameter_fitting`: Optimisation functions for fitting parameters. 
+- `parameter_evaluation`: Involves functions to use the optimal parameters to run all pulse and constant current simulations to generate simulation results. 
+- `results`: Folder to store generated simulation results.
+- `plotting`: Functions to create figures for the manuscript using the generated simulation results by `parameter_evaluation` functions. 
+- `test`: Involves some individual files for sanity checks. 
+
+# Dependencies
+
+This code repository requires following dependencies to be added in auxillary functions, `aux_fun` folder, mostly for plotting purposes. 
+
+- [tight_subplot](https://uk.mathworks.com/matlabcentral/fileexchange/27991-tight_subplot-nh-nw-gap-marg_h-marg_w)
+
+- [coord2norm](https://github.com/StackOverflowMATLABchat/coordinate2normalized)
+
+- [cmocean](https://www.mathworks.com/matlabcentral/fileexchange/57773-cmocean-perceptually-uniform-colormaps)
+
+- [viridis](https://uk.mathworks.com/matlabcentral/fileexchange/51986-perceptually-uniform-colormaps)
+
 
 # Data: 
 
@@ -31,3 +56,4 @@ See our paper ["Electrochemical–thermal modelling of high power Li-ion pouch c
 |                   | pulse/70SOC/2C/100s         | Pulse - 70% SOC - 2C - 100s |                |
 |                   | pulse/70SOC/4C/100s         | Pulse - 70% SOC - 4C - 100s |                |
 |                   | pulse/70SOC/8C/50s          | Pulse - 70% SOC - 8C - 50s  |                |
+

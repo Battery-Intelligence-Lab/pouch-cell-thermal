@@ -1,10 +1,10 @@
-function [out, files]= get_checkpoints_forSurrogateOpt_CC(Crate, data)
+function [out, files]= get_checkpoints(Crate, data)
 % Read Checkpoint values for surrogate optimisation. 
 % Author: Volkan Kumtepeli
 
 files = dir(['Checkpoints/Checkpoint_Pulse_',num2str(Crate),'C_*.mat']); % make sure to run the right folder
 
-threshold = 2e-3; %it was 1e-8;
+threshold = 2e-3;
 
 my_X = [];
 my_Feval = [];
@@ -70,7 +70,3 @@ out.cost2 = my_cost2;
 
 fprintf('Deleted %d files.\n',deleted_files);
 end
-
-% First move generated checkpoints to a new folder from "Checkpoints" folder
-% Then run this line
-% calctheCheckpoint = get_checkpoints_forSurrogateOpt();

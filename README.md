@@ -1,5 +1,5 @@
 # pouch-cell-thermal
-Accurate thermal modelling during fast charging in large-format Li-ion pouch cells.
+Accurate thermal modelling during fast charging in large-format Li-ion pouch cells using MATLAB and COMSOL Multiphysics.
 See our paper ["Electrochemical–thermal modelling of high power Li-ion pouch cells" (Journal of Power Sources, 2026)](https://doi.org/10.1016/j.jpowsour.2025.238764).
 
 **Authors:** Volkan Kumtepeli, Malgorzata E. Wojtala, Eloise C. Tredenick, Charles W. Monroe, David A. Howey.
@@ -14,6 +14,11 @@ This repository is comprised of several folders:
 - `results`: Folder to store generated simulation results.
 - `plotting`: Functions to create figures for the manuscript using the generated simulation results by `parameter_evaluation` functions. 
 - `test`: Involves some individual files for sanity checks. 
+
+## Requirements
+*   MATLAB
+*   COMSOL Multiphysics (v6.3 or later) with LiveLink for MATLAB
+
 
 # Dependencies
 

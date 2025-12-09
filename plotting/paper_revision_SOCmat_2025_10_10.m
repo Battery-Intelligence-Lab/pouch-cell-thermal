@@ -7,7 +7,7 @@ clear variables; close all; clc;
 addpath('../aux_fun');
 
 % Configuration
-results_dir = "../results/paper_results_" + "x0s_fix3_Veq50_revision/";
+results_dir = "../results/paper_results_" + "paper_2026_revision/";
 output_dir = fullfile(results_dir, 'plots/');
 if ~exist(output_dir, 'dir')
     mkdir(output_dir);

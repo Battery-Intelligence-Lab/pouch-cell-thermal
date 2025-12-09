@@ -2,7 +2,7 @@
 % Author: Volkan Kumtepeli
 % Date: 2025-09-29
 
-clear all; close all; clc;
+clear variables; close all; clc;
 
 % Experimental data from Lin et al. 
 % Downloaded from https://github.com/Battery-Intelligence-Lab/multiscale-coupling
@@ -28,7 +28,7 @@ fprintf('This 8C 30%% drop: %4.4f vs Lin 4C 30%% drop: %4.4f\n', This_voltage_dr
 %% Linearised Butler-Volmer Equation assumption. 
 
 % Configuration
-results_dir = "../results/paper_results_" + "x0s_fix3_Veq50_revision/";
+results_dir = "../results/paper_results_" + "paper_2026_revision/";
 output_dir = fullfile(results_dir, 'plots/');
 if ~exist(output_dir, 'dir')
     mkdir(output_dir);

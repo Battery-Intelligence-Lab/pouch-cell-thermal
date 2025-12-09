@@ -12,12 +12,12 @@ import('com.comsol.model.util.*')
 ModelUtil.showProgress(true);
 
 % Hot-cold-mean fitting:
-x0s_fix3_Veq50 = [2.6151  187.1257    9.9508    0.2895    9.4501    1.6648   50.0000         0   -0.0476;  % 30% params
+paper_2026 = [2.6151  187.1257    9.9508    0.2895    9.4501    1.6648   50.0000         0   -0.0476;  % 30% params
                   2.7970  220.3830    9.6504    0.2358   12.3307    2.1885   50.0000         0    0.1007   % 50% params
                   2.5869  218.1668    9.4508    0.2401   15.0029    2.2676   50.0000         0    0.1154]; % 70% params
 
 
-xname = "x0s_fix3_Veq50";
+xname = "paper_2026";
 
 results_dir = "../results/paper_results_" + xname + "_revision";
 

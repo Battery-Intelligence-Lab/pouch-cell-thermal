@@ -5,7 +5,7 @@ clear variables; close all; clc;
 addpath('../aux_fun');
 
 % Configuration
-results_dir = "../results/paper_results_" + "x0s_fix3_Veq50_revision/";
+results_dir = "../results/paper_results_" + "paper_2026_revision/";
 output_dir = fullfile(results_dir, 'plots/');
 if ~exist(output_dir, 'dir')
     mkdir(output_dir);
@@ -426,7 +426,7 @@ end
 
 %% Entropy Plot:
 
-% entropy_Lin_supp = readmatrix('entropy_Lin_supp.csv');
+% entropy_Lin_supp = readmatrix('../data/misc/entropy_Lin_supp.csv');
 % figure; plot(entropy_Lin_supp(:,1), entropy_Lin_supp(:,2));
 % hold on;
 % entropy_pulse = [0.3, pulse_data.soc30_cr8.x_now(end)

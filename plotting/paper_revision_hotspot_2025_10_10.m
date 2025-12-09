@@ -10,7 +10,7 @@ cc_files  = { 'ch_0_10C_4.mat','ch_0_8C_4.mat','ch_0_6C_4.mat','ch_0_4C_4.mat','
 cc_titles = { '10C dch','8C dch','6C dch','4C dch','2C dch' };
 
 
-results_dir = "../results/paper_results_" + "x0s_fix3_Veq50_revision/";
+results_dir = "../results/paper_results_" + "paper_2026_revision/";
 output_dir = fullfile(results_dir, 'plots/');
 if ~exist(output_dir, 'dir')
     mkdir(output_dir);
